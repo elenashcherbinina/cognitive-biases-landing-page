@@ -1,7 +1,126 @@
-/** CSS STYLE **/
+@import './variables.css';
+@import './fonts.css';
 
-.hello {
-  display: block;
+/* General */
 
-  color: #fff;
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Neucha', sans-serif;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.bg-img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('/src/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: '';
+}
+
+.container {
+  position: relative;
+
+  width: 100%;
+}
+
+.container-content {
+  position: relative;
+
+  max-width: 1110px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.flex-col-2 {
+  display: flex;
+  gap: 30px;
+}
+
+.flex-col-2 > * {
+  flex-basis: 50%;
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.center {
+  text-align: center;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+/* Header */
+
+.header-title {
+  margin-bottom: 185px;
+}
+
+.header-image {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+
+  height: 525px;
+}
+
+.header-button {
+  display: inline-block;
+  margin-top: 24px;
+  width: 148px;
+  height: 49px;
+  padding: 12px 24px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--primary);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Video-section */
+
+.video {
+  margin-bottom: -200px;
+
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+/* Footer */
