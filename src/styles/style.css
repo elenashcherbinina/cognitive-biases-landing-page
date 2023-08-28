@@ -60,12 +60,24 @@ a {
   text-align: center;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
 
 .p-24 {
   padding: 24px;
+}
+
+.p-40-55 {
+  padding: 40px 55px;
 }
 
 /* Containers */
@@ -86,6 +98,7 @@ a {
 
 .flex-col-2 {
   display: flex;
+
   margin: 0 auto;
   gap: 30px;
 }
@@ -101,7 +114,8 @@ a {
   gap: 20px 30px;
 }
 
-/* backgrounds and colors */
+/* Backgrounds and colors */
+
 .bg-img::before {
   position: absolute;
   top: 0;
@@ -128,6 +142,10 @@ a {
 }
 
 .bg-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-primary-dark {
   background-color: var(--primary-dark);
 }
 
@@ -167,13 +185,16 @@ a {
 
 .header__button {
   display: inline-block;
+
   margin-top: 24px;
   width: 148px;
   height: 49px;
   padding: 12px 24px;
+
   font-weight: 700;
   color: var(--white);
   background-color: var(--primary);
+
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -221,6 +242,7 @@ a {
 }
 
 /* Other sections */
+
 .image {
   vertical-align: middle;
 }
@@ -257,6 +279,7 @@ a {
   font-size: 34px;
 
   color: var(--white);
+  line-height: 1.2em;
 }
 
 .section__text-dark {
@@ -265,5 +288,72 @@ a {
   font-size: 34px;
 
   color: var(--dark);
+  line-height: 1.2em;
 }
 /* Footer */
+
+.footer__form-group a {
+  text-decoration: underline;
+}
+
+.footer__form-group p {
+  font-size: 12px;
+}
+
+.footer__input-group {
+  display: flex;
+
+  margin-top: 9px;
+
+  height: 50px;
+}
+
+.footer__input {
+  flex-grow: 1;
+
+  padding: 15px;
+
+  font-size: 13px;
+  color: var(--grey);
+  border: none;
+}
+
+.footer__button {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+
+  background-color: var(--primary);
+  border: none;
+}
+
+.footer__button:hover {
+  background-color: var(--primary-hover);
+}
+
+.send-svg::before {
+  position: absolute;
+
+  top: 13px;
+  left: 23px;
+  width: 24px;
+  height: 24px;
+
+  background-image: url('/src/images/send.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: '';
+}
+
+.footer__info {
+  margin-top: 60px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer__info-link {
+  text-decoration: underline;
+  color: var(--blue);
+}

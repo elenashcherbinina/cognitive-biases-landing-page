@@ -139,7 +139,7 @@
           </div>
         </div>
       </section>
-      <section id="#premature-optimization" class="container bg-img bg-brown">
+      <section id="premature-optimization" class="container bg-img bg-brown">
         <div class="container-content">
           <div class="flex-col-2">
             <div>
@@ -174,13 +174,154 @@
           </div>
         </div>
       </section>
-      <!-- <section class="novelty-section"></section>
-      <section class="depreciation-section"></section>
-      <section class="errors-section"></section> -->
-      --> --> -->
+      <section id="distortion-of-novelty" class="container bg-img bg-light">
+        <div class="container-content">
+          <div class="flex-col-2">
+            <img class="image" src="../src/images/3.png" alt="У человечка возникает идея" />
+            <div>
+              <p class="section__header-dark">Когнитивные искажения</p>
+              <h2 class="dark-color">Искажение новизны</h2>
+              <p class="section__text-dark">
+                Вы даёте более высокую оценку тем событиям, которые произошли недавно, и
+                недооцениваете более старые.
+              </p>
+            </div>
+          </div>
+          <div class="section__subheader bg-brown">
+            <h5 class="white-color">Как проявляется</h5>
+          </div>
+          <div class="flex-col-2">
+            <div>
+              <p>
+                Часто это искажение настигает нас, когда нужно решение проблемы и… о! Мы как раз
+                только что решили подобную проблему! Давайте использовать это же решение, потому что
+                оно сработало, и мы помним как!
+              </p>
+            </div>
+            <div>
+              <p>
+                Вы замечаете, что пользуетесь теми же рабочими методиками раз за разом? Если да,
+                возможно, вы смотрите на разные проблемы под одним и тем же углом.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hyperbolic-depreciation" class="container bg-img bg-brown">
+        <div class="container-content">
+          <div class="flex-col-2">
+            <div>
+              <p class="section__header-white">Когнитивные искажения</p>
+              <h2 class="white-color">Гиперболическое обесценивание</h2>
+              <p class="section__text-white">
+                Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную,
+                недоступную сейчас, но доступную в будущем.
+              </p>
+            </div>
+            <img
+              class="image"
+              src="../src/images/4.png"
+              alt="Человечек стоит перед горой за которой сокровища"
+            />
+          </div>
+          <div class="section__subheader bg-white">
+            <h5 class="brown-color">Как проявляется</h5>
+          </div>
+          <div class="flex-col-2 white-color">
+            <div>
+              <p>
+                Вы когда-нибудь откладывали написание теста? Ловили себя на использовании
+                клавиш-стрелок в Vim? Поздравляю, у вас наблюдается гиперболическое обесценивание.
+              </p>
+            </div>
+            <div>
+              <p>
+                Немедленная выгода от использования чего-то быстродоступного значительно смягчает
+                боль, которую нужно перетерпеть, чтобы усвоить правильный синтаксис для перемещения
+                на нужную строчку. Но как только вы поймёте как перемещаться быстрее, выгода в
+                будущем намного выше. В итоге вы сохраните много времени.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="errors-in-planning" class="container bg-img bg-light">
+        <div class="container-content">
+          <div class="flex-col-2">
+            <img class="image" src="../src/images/5.png" alt="Человечек составлет список дел" />
+            <div>
+              <p class="section__header-dark">Когнитивные искажения</p>
+              <h2 class="dark-color">Ошибка планирования</h2>
+              <p class="section__text-dark">
+                Неправильно рассчитывать время необходимое для завершения задачи.
+              </p>
+            </div>
+          </div>
+          <div class="section__subheader bg-brown">
+            <h5 class="white-color">Как проявляется</h5>
+          </div>
+          <div class="flex-col-2">
+            <div>
+              <p>
+                Одно из искажений, которое должно признать большинство из нас. И менеджеры проекта,
+                и сами пользователи продукта — все склонны ставить сроки, в которые невозможно
+                закончить запланированное.
+              </p>
+            </div>
+            <div>
+              <p>Это отлично выражается в старом афоризме:</p>
+              <p>
+                Первые 90% готового кода отнимают первые 90% времени разработки. Оставшиеся 10%
+                отнимают вторые 90% времени разработки.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <section class="footer-section"></section>
+    <footer class="container">
+      <div class="container-content">
+        <div class="flex-col-2 bg-primary-dark align-items-center p-40-55">
+          <div>
+            <h3 class="white-color">
+              Хотите узнать больше? <br />
+              Подпишитесь на обновления
+            </h3>
+          </div>
+          <form class="footer__form-group">
+            <label class="white-color" for="email">Электронная почта</label>
+            <div class="footer__input-group">
+              <input
+                id="email"
+                class="footer__input"
+                type="email"
+                placeholder="Ваша электронная почта"
+              />
+              <button class="footer__button send-svg" type="submit"></button>
+            </div>
+            <p class="white-color m-0">
+              Подписываясь, вы принимаете <a class="white-color" href="#">правила сервиса</a>
+            </p>
+          </form>
+        </div>
+        <div class="footer__info">
+          <p>© 2023 Elena Shcherbinina</p>
+          <p>
+            По материалам статьи
+            <a
+              class="footer__info-link"
+              href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b"
+              target="_blank"
+              >Yash Ranadive Cognitive Biases in Programming</a
+            >
+          </p>
+          <p>
+            <a class="footer__info-link" href="https://ru.hexlet.io" target="_blank"
+              >Курсы программирования Hexlet</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
